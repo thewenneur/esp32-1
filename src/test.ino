@@ -6,19 +6,19 @@
 void setup()
 {
 Serial.begin(9600);
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(16, OUTPUT);
   Serial.println("Démarage du débogage: ");
 }
 
 void loop()
 {
   Serial.println("nouvelle loop. La LED va s'allumer.");
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(16, HIGH);
   delay(1000);
 Serial.println("La LED va s'éteindre.");
-  digitalWrite(LED_BUILTIN, LOW);
-digitalWrite(LED_BUILTIN, HIGH);
-digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(16, LOW);
+digitalWrite(16, HIGH);
+digitalWrite(16, LOW);
    // wait for a second
   delay(7000);
 }
