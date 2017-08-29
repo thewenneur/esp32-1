@@ -17,8 +17,10 @@ void loop()
   delay(1000);
 Serial.println("La LED va s'éteindre.");
   digitalWrite(16, LOW);
-digitalWrite(16, HIGH);
-digitalWrite(16, LOW);
+  delay(100);
+  digitalWrite(16, HIGH);
+  delay(100)
+  digitalWrite(16, LOW);
    // wait for a second
   delay(7000);
 }
