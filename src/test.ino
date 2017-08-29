@@ -5,19 +5,17 @@
 
 void setup()
 {
-  // initialize LED digital pin as an output.
+Serial.begin(9600);
   pinMode(LED_BUILTIN, OUTPUT);
+  Serial.println("Démarage du débogage: ");
 }
 
 void loop()
 {
-  // turn the LED on (HIGH is the voltage level)
+  Serial.println("nouvelle loop. La LED va s'allumer.");
   digitalWrite(LED_BUILTIN, HIGH);
-
-  // wait for a second
   delay(1000);
-
-  // turn the LED off by making the voltage LOW
+Serial.println("La LED va s'éteindre.");
   digitalWrite(LED_BUILTIN, LOW);
 digitalWrite(LED_BUILTIN, HIGH);
 digitalWrite(LED_BUILTIN, LOW);
